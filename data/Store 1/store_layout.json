@@ -1,0 +1,93 @@
+{
+  "store_id": "ST1076",
+  "store_code": "store_1076",
+  "cameras": {
+    "CAM1": {
+      "camera_id": "CAM1",
+      "video_file": "CAM 1 - zone.mp4",
+      "role": "zone",
+      "resolution": [1920, 1080],
+      "zones": [
+        {
+          "zone_id": "PURPLLE_MUM_1076_Z01",
+          "zone_name": "Left Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "polygon": [[60, 80], [820, 80], [820, 520], [60, 520]],
+          "hotspot": [440, 300]
+        },
+        {
+          "zone_id": "PURPLLE_MUM_1076_Z_FRAGRANCE",
+          "zone_name": "Fragrance Counter",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "polygon": [[60, 560], [700, 560], [700, 980], [60, 980]],
+          "hotspot": [380, 770]
+        }
+      ],
+      "entry_threshold": null
+    },
+    "CAM2": {
+      "camera_id": "CAM2",
+      "video_file": "CAM 2 - zone.mp4",
+      "role": "zone",
+      "resolution": [1920, 1080],
+      "zones": [
+        {
+          "zone_id": "PURPLLE_MUM_1076_Z02",
+          "zone_name": "Center Display",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "polygon": [[180, 120], [940, 120], [940, 660], [180, 660]],
+          "hotspot": [560, 390]
+        },
+        {
+          "zone_id": "PURPLLE_MUM_1076_Z03",
+          "zone_name": "Lipstick Aisle",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "polygon": [[1000, 120], [1760, 120], [1760, 660], [1000, 660]],
+          "hotspot": [1380, 390]
+        },
+        {
+          "zone_id": "PURPLLE_MUM_1076_Z_MAKEUP",
+          "zone_name": "Makeup Unit",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "polygon": [[400, 680], [1500, 680], [1500, 1020], [400, 1020]],
+          "hotspot": [950, 850]
+        }
+      ],
+      "entry_threshold": null
+    },
+    "CAM3": {
+      "camera_id": "CAM3",
+      "video_file": "CAM 3 - entry.mp4",
+      "role": "entry",
+      "resolution": [1920, 1080],
+      "zones": [],
+      "entry_threshold": {
+        "line": [[760, 0], [760, 1080]],
+        "inbound_direction": "right"
+      }
+    },
+    "CAM5": {
+      "camera_id": "CAM5",
+      "video_file": "CAM 5 - billing.mp4",
+      "role": "billing",
+      "resolution": [1920, 1080],
+      "zones": [
+        {
+          "zone_id": "PURPLLE_MUM_1076_Z_BILLING_01",
+          "zone_name": "Billing Counter Queue",
+          "zone_type": "BILLING",
+          "is_revenue_zone": true,
+          "polygon": [[260, 220], [1660, 220], [1660, 920], [260, 920]],
+          "hotspot": [960, 570],
+          "abandon_wait_seconds": 60
+        }
+      ],
+      "entry_threshold": null
+    }
+  }
+}

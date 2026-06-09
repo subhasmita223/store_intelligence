@@ -1,0 +1,79 @@
+{
+  "store_id": "ST2001",
+  "store_code": "store_2001",
+  "cameras": {
+    "ENTRY1": {
+      "camera_id": "ENTRY1",
+      "video_file": "entry 1.mp4",
+      "role": "entry",
+      "resolution": [1920, 1080],
+      "zones": [],
+      "entry_threshold": {
+        "line": [[0, 780], [1920, 780]],
+        "inbound_direction": "up"
+      }
+    },
+    "ENTRY2": {
+      "camera_id": "ENTRY2",
+      "video_file": "entry 2.mp4",
+      "role": "entry",
+      "resolution": [1920, 1080],
+      "zones": [],
+      "entry_threshold": {
+        "line": [[0, 780], [1920, 780]],
+        "inbound_direction": "up"
+      }
+    },
+    "ZONE1": {
+      "camera_id": "ZONE1",
+      "video_file": "zone.mp4",
+      "role": "zone",
+      "resolution": [1920, 1080],
+      "zones": [
+        {
+          "zone_id": "PURPLLE_MUM_2001_Z01",
+          "zone_name": "Left Wall Units",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "polygon": [[60, 100], [580, 100], [580, 980], [60, 980]],
+          "hotspot": [320, 540]
+        },
+        {
+          "zone_id": "PURPLLE_MUM_2001_Z02",
+          "zone_name": "Right Wall Units",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "polygon": [[1340, 100], [1860, 100], [1860, 980], [1340, 980]],
+          "hotspot": [1600, 540]
+        },
+        {
+          "zone_id": "PURPLLE_MUM_2001_Z03",
+          "zone_name": "Center Consultation",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "polygon": [[640, 300], [1280, 300], [1280, 780], [640, 780]],
+          "hotspot": [960, 540]
+        }
+      ],
+      "entry_threshold": null
+    },
+    "BILLING1": {
+      "camera_id": "BILLING1",
+      "video_file": "billing_area.mp4",
+      "role": "billing",
+      "resolution": [1920, 1080],
+      "zones": [
+        {
+          "zone_id": "PURPLLE_MUM_2001_Z_BILLING_01",
+          "zone_name": "Billing Counter Queue",
+          "zone_type": "BILLING",
+          "is_revenue_zone": true,
+          "polygon": [[280, 200], [1640, 200], [1640, 900], [280, 900]],
+          "hotspot": [960, 550],
+          "abandon_wait_seconds": 60
+        }
+      ],
+      "entry_threshold": null
+    }
+  }
+}
